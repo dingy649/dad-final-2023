@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diana Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Yuqiao Ding</h1>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="{{ url_for('portfolio') }}">
+                <div class="shadow">
+                    <img class="gallery-image" img width="150" height="180" border="0" margin="0 auto" src="static/home.png">
+                </div>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="{{ url_for('about') }}">
+                <div class="img__wrap">
+                    <div class="img__description">
+                        <p> Hi, I am Yuqiao Ding, a junior majoring in illustration at Parsons School of Design.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

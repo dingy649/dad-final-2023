@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+
+        *{
+        box-sizing:border-box;
+        }
+        body {margin: 0; font-family: Lucida Console,cursive;background:black;}
+        h2 {color:white;padding:5px;text-align:center;margin:50px;}
+        /*style the header*/
+        .header{
+        color:pink;
+        padding:20px;
+        text-align:center;
+        }
+        
+        /*style the menu bar*/
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #111;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 12px 16px;
+        
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn {
+          color:pink;
+          text-decoration:none;
+        }
+        
+        li.dropdown {
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .column {
+          float: left;
+          padding: 50px;
+          height: 600px;
+        }
+        
+        .left {
+          width: 40%;
+          margin-top: -25px;
+        }
+        
+        .right {
+          width: 60%;
+        }
+        
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 0px;
+          box-sizing: border-box;
+          margin-top: 8px;
+          margin-bottom: 16px;
+          resize: vertical;
+          letter-spacing: 3px;
+        }
+        
+        input[type=submit] {
+          color: black;
+          padding: 5px 0px;
+          border: none;
+          border-radius: 4px;
+          font-size: 15px;
+          letter-spacing: 3px;
+          float: right;
+        }
+        .responsive {
+          padding: 60px 60px;
+          float: left;
+          width: 30%;
+        }
+        
+        .description{
+        
+          float: right;
+          width: 50%
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 100%;
+          }
+          .right {
+          width: 80%;
+        }
+        
+        
+        }
+        
+        </style>
+        </head>
+
+</head>
+<body>
+  <div class="header">
+    <h1>Yuqiao Ding</h1>
+    <p class="introduction">Illustration can make any impossible things become possible.</p>
+  </div>
+  
+  <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li class="dropdown">
+            <a href="{{ url_for('portfolio') }} class="dropbtn">Works</a>
+            <div class="dropdown-content">
+                <a href="drawing.html">Drawings</a>
+            </div>
+        </li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+ </ul>
+  
+  <div class="row">
+    <div class="responsive" style="color:white;letter-spacing: 2.5px;">
+      <p style="font-size: 15px; margin-top: 55px;">Email:yuqiao1017@gmail.com</p>
+      <p style="font-size: 15px;">Instagram: dianad1017</p>
+    </div>
+  </div>
+  
+  <div class="column right" style="color:white;letter-spacing: 2.5px;">
+    <form action="/action_page.php">
+      <label for="fname">first name</label>
+      <input type="text" id="fname" name="firstname">
+  
+      <label for="lname">surname</label>
+      <input type="text" id="sname" name="surname">
+  
+      <label for="lname">email</label>
+      <input type="text" id="email" name="email">
+  
+      <label for="subject">Content</label>
+      <textarea id="subject" name="subject" style="height:200px"></textarea>
+  
+      <input type="submit" value="submit">
+  
+    </form>
+  </div>
+  
+</body>
+</html>

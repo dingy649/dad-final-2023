@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="static/port.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Yuqiao Ding</h1>
+        <p>Illustration can make any impossible things become possible.</p>
+      </div>
+      
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+            <a href="{{ url_for('portfolio') }}" class="dropbtn">Works</a>
+            <div class="dropdown-content">
+                <a href="drawing.html">Drawings</a>
+            </div>
+        </li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+      <h2>-After Death-</h2>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="static/afterdeath1.jpg">
+            <img src="static/afterdeath1.jpg" alt="After Death No.1" >
+          </a>
+          <div class="caption">Medium: Digital Illustration<br>Size:4.25*5.5 inches</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a href="static/afterdeath2.jpg">
+            <img src="static/afterdeath2.jpg" alt="After Death No.2">
+          </a>
+          <div class="caption">Medium: Digital Illustration<br>Size: 4.25*5.5 inches</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a href="static/afterdeath3.jpg">
+            <img src="static/afterdeath3.JPG" alt="After Death No.3" >
+          </a>
+          <div class="caption">Medium: Digital Illustration<br>Size: 4.25*5.5 inches</div>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+      <h2>-Rough and Tumble Play-</h2>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="static/play1.jpg">
+            <img src="static/play1.jpg" alt="Rough and Tumble Play No.1" >
+          </a>
+          <div class="caption">Medium: Digital Illustration<br>Size:2550*1650px</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a href="static/play2.jpg">
+            <img src="static/play2.jpg" alt="Rough and Tumble Play No.2">
+          </a>
+          <div class="caption">Medium: Digital Illustration<br>Size: 2650px*4096px</div>
+        </div>
+      </div>
+      
+        <div class="responsive">
+        <div class="gallery">
+          <a href="static/play4.jpg">
+            <img src="static/play4.jpg" alt="Rough and Tumble Play No.4" >
+          </a>
+          <div class="caption">Medium: Digital Illustration<br>Size:3450*3042px</div>
+        </div>
+      </div>
+      
+      
+      
+      
+
+</body>
+</html>

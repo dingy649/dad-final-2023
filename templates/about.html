@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="static/about.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Yuqiao Ding</h1>
+        <p class="introduction">Illustration can make any impossible things become possible.</p>
+    </div>
+    
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+            <a href="{{ url_for('portfolio') }}" class="dropbtn">Works</a>
+            <div class="dropdown-content">
+                <a href="drawing.html">Drawings</a>
+            </div>
+        </li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+
+    <div class="responsive">
+        <figure>
+            <img  src="static/yuqiaoding.jpg" alt="Yuqiao Ding">
+        </figure>
+    </div>
+    <div class="responsive">
+        <p style="margin-top: 200px;margin-left:50px;color:white;">Yuqiao Ding is a third-year student at Parsons School of Design, majoring in illustration and minoring in creative coding.<br>As an individual illustrator and visual artist, she shows a strong interest in destructing space and worlds at her works. Her goal is not only transferring her emotion to visual images and animation but also creating her own two dimensional world, showing her imagination about unknown creatures and parallel world. </p>
+    </div>
+</body>
+</html>
+
